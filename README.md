@@ -1,15 +1,26 @@
-    virtualenv -p python3 venv
-   
-    source venv/bin/activate
- 
-    pip install -r requirements.txt
+##This is a simple blockchain in python and Flask
 
-    run blockchain:
-        ./main.py
+Prepare virtual environment
+```
+virtualenv -p python3 venv
+source venv/bin/activate
+pip install -r requirements.txt
 
-    open webui:
-        http://localhost:5000
+```
 
-    after fill and submit form will add new block in ./blockchain
+Run Flask app:
+```
+./main.py
+
+```
+        
+Open webui:
+```
+http://localhost:5000
+
+```
+        
+After fill and submit form will add new block in ./blockchain
     
-    to check the integrity of the block, press button "Check integrity"
+To check the integrity of the block, press button "Check integrity"
+
