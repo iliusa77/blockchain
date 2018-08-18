@@ -11,3 +11,5 @@
         http://localhost:5000
 
     after fill and submit form will add new block in ./blockchain
+    
+    to check the integrity of the block, press button "Check integrity"

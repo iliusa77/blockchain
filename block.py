@@ -54,6 +54,8 @@ def write_block(name, amount, to_whom, prev_hash=''):
 def check_integrity():
     files = get_files()
 
+    results = []
+
     for file in files[1:]:
         h = json.load(open(blockchain_dir + str(file)))['hash']
 
@@ -66,7 +68,11 @@ def check_integrity():
         else:
             res = 'Corrupted'
 
-        print("bloc {} is {}".format(prev_file, res))
+        #print("bloc {} is {}".format(prev_file, res))
+
+        results.append({'block': prev_file, 'result': res})
+
+        return results
 
 def main():
     print('yes - if fist start, no - if not')
