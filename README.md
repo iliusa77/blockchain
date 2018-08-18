@@ -1,4 +1,4 @@
-##This is a simple blockchain in python and Flask
+## This is a simple blockchain in python and Flask
 
 Prepare virtual environment
 ```
